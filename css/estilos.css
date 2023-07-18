@@ -1,0 +1,271 @@
+/*aplico Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Titillium+Web:ital,wght@0,200;0,400;1,200&display=swap');
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para el header */
+  .header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    height: 110px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    
+  }
+  
+  .padreNavegacionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .contenedorLogo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .contenedorLogo a img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .navegacionHeader {
+    display: flex;
+    
+  }
+  
+  .listaNavegacion {
+    display: flex;
+    list-style-type: none;
+    
+  }
+  
+  .pages {
+    margin-right: 20px;
+  }
+  
+  .colorGris {
+    color: gray;
+    font-family:'Montserrat', sans-serif;
+  }
+  
+  .colorNegro {
+    color: black;
+    font-family:'Montserrat', sans-serif;
+  }
+  
+  /* Estilos para la imagen principal */
+  .padreImagenPrincipal {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .contenedorImagenPrincipal img {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Estilos para el contenido principal */
+  .contenedorTituloPrincipal {
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+
+  .tituloPrincipal{
+    margin-bottom: 15px;
+  }
+
+  .parrafoPrincipal{
+    padding-top: 10px;
+  }
+  
+  /* Estilos para el footer */
+  .padreFooter {
+    background-color: #f2f2f2;
+    height: 80px;
+    padding: 20px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contacto {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .fixed{
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    justify-content: space-between;
+  }
+
+  
+  /* Media queries responsive */
+  @media screen and (max-width: 768px) {
+    .padreNavegacionHeader {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contenedorLogo {
+      margin-bottom: 10px;
+    }
+  
+    .navegacionHeader {
+      margin-top: 10px;
+    }
+  
+    .listaNavegacion {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .pages {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .padreImagenPrincipal {
+      margin-top: 10px;
+    }
+  
+    .contenedorImagenPrincipal img {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contenedorTituloPrincipal {
+      padding: 10px;
+    }
+  
+    .contacto {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+
+
+main {
+    padding: 20px;
+  }
+  
+  h1 {
+   font-family:'Montserrat', sans-serif;
+   margin-bottom: 15px;
+   text-align: center;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-family:'Montserrat', sans-serif;
+    margin-bottom: 10px;
+  }
+   .tituloTragos{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-family:'Montserrat', sans-serif;
+   }
+  div {
+    margin-bottom: 40px;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-family:'Montserrat', sans-serif;
+  }
+  
+  .imagenesTragos {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .textoSecundario {
+    text-align: justify;
+    font-family:'Montserrat', sans-serif;
+  }
+  
+  /* Media queries para hacer la página responsive */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+      font-family:'Montserrat', sans-serif;
+    }
+  
+    .imagenesTragos {
+      max-width: 100%;
+      
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 24px;
+      font-family:'Montserrat', sans-serif;
+    }
+  
+    .textoSecundario {
+      font-size: 14px;
+      font-family:'Montserrat', sans-serif;
+    }
+  }
+  
+  .formulario{
+    margin-bottom: 200px;
+  }
+
+   .ingreseNombre{
+    font-family:'Montserrat', sans-serif;
+  }
+
+  .box{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+
+  .divImagenes{
+    
+    width: 30%;
+    height: 300px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divImagenes img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+  }
